@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+
+
+body {
+  width: 96vw;
+  min-height: 100vh;
+   background: #40E0D0;
+background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  display: grid;
+  place-items: center;
+  /* background-image: url('https://mansi-singla-31215.github.io/T-23-Sponsor/bg-image.jpeg'); */
+  /* overflow-x: hidden; */
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+  --rotate: 132deg;
+  }
+  
+  .element {
+    transform: rotate(var(--rotate));
+  }
+  
+
+/* .contain {
+  margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Codystar';
+   height: 9rem;
+   z-index: 10;
+} */
+
+
+
+
+
+#div-0 { margin: 10px; }
+.contained {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  color: #ffffff;
+  position: relative;
+  /* left: 0px;
+  top: 0px; */
+  z-index: 2;
+}
+
+.imgContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  z-index: 15;
+  margin: 4px;
+  padding-bottom: 20px;
+}
+
+.partners {
+  display: flex;
+  flex-direction:inherit;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  /* width: 28vw; */
+}
+
+.box {
+  align-items: center;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4%;
+  width: 79%;
+}
+
+
+/* .neons {
+  margin: 20px;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 9rem;
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+} */
+
+/* @-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+} */
+
+body{
+  background-color: black;
+}
+.title {
+  padding-top: 0rem;
+  color: rgba(91, 74, 47, 0.72);
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.neons {
+  font-size: 5rem;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.neons h1 {
+  padding-top: 3rem;
+  font-family: 'Press Start 2P';
+
+  /* padding-left: 3rem; */
+  font-size: 5rem;
+  text-decoration: none;
+  color: #6053f2;
+  text-align: center;
+  position: relative;
+}
+
+.neons h1 {
+  -webkit-text-stroke: 1.8px rgba(255, 115, 0, 0.323);
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+.card{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.imgspr{
+  width: 283px;
+  height: 278px;
+  object-fit: fill;
+}
+
+.cardBox {
+  width: 300px;
+  height: 280px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+    /* margin-top: 100px; */
+}
+.card {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #000814;
+  border-radius: 20px;
+  z-index: 5;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+}
+/* .card h2, span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 800;
+  pointer-events: none;
+  
+} */
+
+span {
+  top: 50%;
+}
+
+/* .card .content h4 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.card .content p {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+.card .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+} */
+
+/* .card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+
+}
+.card:hover .image{
+opacity: 0.1;
+} */
+
+/* .cardBox::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40E0D0;
+background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  animation: glowing01 5s linear infinite;
+  transform-origin: center;
+  animation: glowing 5s linear infinite;
+} */
+
+/* @keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+@media only screen and (max-width: 930px){
+ .neons h1{
+  font-size: 5rem;
+ }
+}
+
+@media only screen and (max-width: 700px){
+  .neons h1{
+   font-size: 5rem;
+  }
+  
+   .cardBox {
+    width: 230px;
+    height: 215px;
+  }
+  .imgspr{
+    width: 220px;
+    height: 210px;
+    object-fit: fill;
+  }
+
+  .contained h1{
+    font-size: 28px;
+  }
+
+h1 {
+    padding-top: 18px;
+}
+  .card .content h4{
+    font-size: 1.5rem;
+  }
+ }
+
+ @media only screen and (max-width: 500px){
+  .neons h1{
+    font-size: 3.2rem;
+    padding-top: 60px;
+   }
+   .contained{
+    margin-top: -10px;
+   }
+    .cardBox {
+    width: 210px;
+    height: 200px;
+  }
+  .imgspr{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+  }
+ }
+
+ 
+ @keyframes neonGlow {
+  0%, 100% {
+    color: #f30bef;
+    text-shadow: 0 0 10px #002fff, 0 0 20px #002fff, 0 0 30px #002fff, 0 0 40px #002fff, 0 0 50px #002fff, 0 0 60px #002fff, 0 0 70px #002fff, 0 0 90px #002fff;
+  }
+  50% {
+    color: #002fff;
+    text-shadow: none;
+  }
+}
+
+@keyframes neonSpin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+@keyframes neonGlowing {
+  0% {
+    transform: rotate(0);
+    filter: blur(10px);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: blur(20px);
+  }
+}
+
+body {
+  font-family: 'Press Start 2P';
+  background-color: black;
+}
+
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before,
+.card::after {
+  animation: neonSpin 2.5s linear infinite;
+}
+
+.cardBox::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40E0D0;
+  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  animation: neonGlowing 5s linear infinite;
+  transform-origin: center;
+}
+
+.neons h1 {
+  -webkit-text-stroke: 1.8px rgba(255, 115, 0, 0.323);
+  animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+.cardBox,
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+hr {
+  border: 0;
+  width: 100%;
+  height: 0;
+  border-top: 0.3rem dotted yellow;
+  position: relative;
+  overflow: visible;
+  margin: 2rem 0;
+}
+
+hr:before {
+  animation: move 10s infinite linear;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='571.11' width='541.6'%3E%3Cpath style='fill:%23ffcc00' d='M535.441,412.339A280.868,280.868 0 1,1 536.186,161.733L284.493,286.29Z'/%3E%3C/svg%3E");
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  content: ' ';
+  height: 24px;
+}
+
+hr:after {
+  animation: move 10s 1s infinite linear;
+  position: absolute;
+  top: -14px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 400 444.34' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E%3Cpath d='...");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  content: ' ';
+  height: 24px;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+}
+.neons h1{
+  font-size: 60px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 10%;
+  transition: 0.3s;
+  transition: 0.3s;
+  animation: h1 5000ms infinite;
+  text-shadow: 0 0 10px rgb(255, 0, 0),
+      0 0 20px rgb(255, 0, 0),
+      0 0 40px rgb(255, 0, 0),
+      0 0 80px rgb(230, 0, 0),
+      0 0 120px rgb(255, 0, 0),
+      0 0 110px rgb(255, 0, 0);
+}
+/*Keyframes at which the text shadow changess*/
+@keyframes h1{
+  20%{
+      text-shadow: 0 0 10px rgb(47, 0, 255),
+      0 0 20px rgb(47, 0, 255),
+      0 0 40px rgb(47, 0, 255),
+      0 0 80px rgb(47, 0, 255),
+      0 0 120px rgb(47, 0, 255),
+      0 0 110px rgb(47, 0, 255);
+  }
+  40%{
+      text-shadow: 0 0 10px rgb(60, 255, 0),
+      0 0 20px rgb(60, 255, 0),
+      0 0 40px rgb(60, 255, 0),
+      0 0 80px rgb(60, 255, 0),
+      0 0 120px rgb(60, 255, 0),
+      0 0 110px rgb(60, 255, 0);
+  }
+  60%{
+      text-shadow: 0 0 10px rgb(0, 204, 255),
+      0 0 20px rgb(0, 204, 255),
+      0 0 40px rgb(0, 204, 255),
+      0 0 80px rgb(0, 204, 255),
+      0 0 120px rgb(0, 204, 255),
+      0 0 110px rgb(0, 204, 255);
+  }
+  80%{
+      text-shadow: 0 0 10px rgb(255, 251, 0),
+      0 0 20px rgb(255, 251, 0),
+      0 0 40px rgb(255, 251, 0),
+      0 0 80px rgb(255, 251, 0),
+      0 0 120px rgb(255, 251, 0),
+      0 0 110px rgb(255, 251, 0);
+  }
+  100%{
+      text-shadow: 0 0 10px rgb(255, 0, 212),
+      0 0 20px rgb(255, 0, 212),
+      0 0 40px rgb(255, 0, 212),
+      0 0 80px rgb(255, 0, 212),
+      0 0 120px rgb(255, 0, 212),
+      0 0 110px rgb(255, 0, 212);
+  }
+}
+ 
+
+ 
